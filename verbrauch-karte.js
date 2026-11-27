@@ -1,4 +1,4 @@
-// verbrauch-karte v1.0.0
+// verbrauch-karte v1.0.1
 // Einzeln installierbares Modul (Home Assistant Marketplace / HACS, Kategorie Dashboard).
 window.customCards = window.customCards || [];
 window.customCardFeatures = window.customCardFeatures || [];
@@ -245,7 +245,7 @@ class VerbrauchKarte extends HTMLElement {
 
 if (!customElements.get(TYPE7)) customElements.define(TYPE7, VerbrauchKarte);
 if (!window.customCards.some((c) => c.type === TYPE7)) {
-  window.customCards.push({ type: TYPE7, name: "Verbrauch-Karte", description: "Verbrauch pro Stunde/Tag/Monat mit Zeitraumwahl und Blättern" });
+  window.customCards.push({ type: TYPE7, name: "Verbrauch-Karte", description: "Verbrauch pro Stunde/Tag/Monat mit Zeitraumwahl und Blättern", preview: true });
 }
 
 // Eingabemaske (visueller Editor) und Startwerte
